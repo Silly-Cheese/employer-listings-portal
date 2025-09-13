@@ -4,14 +4,23 @@
 // Then host these files (GitHub Pages) and follow README to set up Firestore and Auth.
 
 // ---- Firebase config (replace with your project's config) ----
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAaAv7u5677_eU7Kcn_5YheDEedPIM5z_8",
   authDomain: "employer-listings-portal.firebaseapp.com",
   projectId: "employer-listings-portal",
-  storageBucket: "employer-listings-portal.appspot.com",  // ✅ FIXED
+  storageBucket: "employer-listings-portal.firebasestorage.app",
   messagingSenderId: "143333191257",
   appId: "1:143333191257:web:359edfdcf916397cda8b48"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 // --------------------------------------------------------------
 
 // Dynamic import of Firebase compat libraries (works on static hosting)
