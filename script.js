@@ -8,7 +8,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAaAv7u5677_eU7Kcn_5YheDEedPIM5z_8",
   authDomain: "employer-listings-portal.firebaseapp.com",
   projectId: "employer-listings-portal",
-  storageBucket: "employer-listings-portal.firebasestorage.app",
+  storageBucket: "employer-listings-portal.appspot.com",  // ✅ FIXED
   messagingSenderId: "143333191257",
   appId: "1:143333191257:web:359edfdcf916397cda8b48"
 };
