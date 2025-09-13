@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Employer Listings Portal — Dashboard</title>
+<link rel="stylesheet" href="styles.css"/></head>
+<body data-page="dashboard">
+<header class="header"><div class="brand"><img src="assets/logo.png" alt="logo"><h1>Employer Listings Portal</h1></div>
+  <div class="topbar"><button id="logoutBtn" class="btn ghost">Sign Out</button><span id="userBadge">Not logged in</span></div></header>
+<main class="container">
+  <div class="grid">
+    <div class="card">
+      <h3>Your Listings</h3>
+      <div class="search"><input class="input" id="searchInput" placeholder="Search your listings..."></div>
+      <table class="table"><thead><tr><th>Company</th><th>Position</th><th>Role</th><th>Roblox</th><th>Actions</th></tr></thead><tbody id="listingsTableBody"></tbody></table>
+      <p class="hint">Listings are visible to Leadership. You can edit or delete any listing you created.</p>
+    </div>
+
+    <aside class="card">
+      <h3>Add / Edit Listing</h3>
+      <form id="addListingForm">
+        <input class="input" name="companyName" placeholder="Company Name" required>
+        <input class="input" name="robloxUsername" placeholder="Your Roblox Username" required>
+        <input class="input" name="discordUsername" placeholder="Your Discord Username">
+        <input class="input" name="discordId" placeholder="Your Discord ID">
+        <input class="input" name="role" placeholder="Your Role (e.g., Recruiter)">
+        <input class="input" name="positionHiringFor" placeholder="Position Hiring For" required>
+        <textarea class="input" name="positionRequirements" rows="4" placeholder="Position Requirements"></textarea>
+        <input class="input" name="discordGroupLink" placeholder="Discord Group Link">
+        <input class="input" name="robloxGroupLink" placeholder="Roblox Group Link">
+        <input class="input" name="additionalNotes" placeholder="Additional Notes (optional)">
+        <div class="form-row"><button class="btn" type="submit">Add Listing</button></div>
+      </form>
+    </aside>
+  </div>
+</main>
+<script type="module" src="script.js"></script>
+</body>
+</html>

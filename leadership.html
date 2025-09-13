@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Employer Listings Portal — Leadership</title>
+<link rel="stylesheet" href="styles.css"/></head>
+<body data-page="leadership">
+<header class="header"><div class="brand"><img src="assets/logo.png" alt="logo"><h1>Employer Listings Portal — Leadership</h1></div>
+  <div class="topbar"><button id="logoutBtn" class="btn ghost">Sign Out</button><span id="userBadge">Not logged in</span></div></header>
+<main class="container">
+  <div class="card">
+    <h3>All Listings (Leadership)</h3>
+    <div class="search"><input class="input" id="searchAll" placeholder="Search all listings..."></div>
+    <table class="table"><thead><tr><th>Company</th><th>Position</th><th>Role</th><th>Roblox</th><th>Discord</th><th>Discord ID</th><th>Owner</th><th>Actions</th></tr></thead><tbody id="listingsTableBody"></tbody></table>
+    <p class="notice">Leadership can view, delete, or review listings. To grant leadership access, set a document in the `leadership` collection with your user UID and { isLeadership: true } (see README).</p>
+  </div>
+</main>
+<script type="module" src="script.js"></script>
+</body>
+</html>

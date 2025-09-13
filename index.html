@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Employer Listings Portal — Login</title>
+<link rel="stylesheet" href="styles.css"/></head>
+<body>
+<header class="header"><div class="brand"><img src="assets/logo.png" alt="logo"><h1>Employer Listings Portal</h1></div><div class="topbar"><span id="userBadge">Not logged in</span></div></header>
+<main class="container">
+  <div class="grid">
+    <div class="card" id="authCard">
+      <h3>Login</h3>
+      <form id="loginForm">
+        <input class="input" name="email" type="email" placeholder="Email" required>
+        <input class="input" name="password" type="password" placeholder="Password" required>
+        <div class="form-row"><button class="btn" type="submit">Sign In</button></div>
+      </form>
+      <p class="hint">Or create an account below. Accounts require a valid email (used for login).</p>
+    </div>
+
+    <aside class="card">
+      <h3>Create account</h3>
+      <form id="signupForm">
+        <input class="input" name="email" type="email" placeholder="Email" required>
+        <input class="input" name="password" type="password" placeholder="Password (min 6 chars)" required>
+        <input class="input" name="roblox" type="text" placeholder="Roblox Username" required>
+        <input class="input" name="discord" type="text" placeholder="Discord Username (e.g., User#1234)" required>
+        <input class="input" name="discordId" type="text" placeholder="Discord ID (numeric)" required>
+        <div class="form-row"><button class="btn" type="submit">Sign Up</button></div>
+      </form>
+      <p class="notice">By creating an account you agree to be contacted about listings you submit. Leadership review happens in the Leadership Panel.</p>
+    </aside>
+  </div>
+</main>
+<script type="module" src="script.js"></script>
+</body>
+</html>
