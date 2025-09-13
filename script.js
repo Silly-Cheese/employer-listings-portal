@@ -22,6 +22,7 @@ const firebaseConfig = {
     await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js');
     const firebase = window.firebase;
     firebase.initializeApp(firebaseConfig);
+    console.log("Firebase connected:", firebase.apps.length);
     const auth = firebase.auth();
     const db = firebase.firestore();
 
